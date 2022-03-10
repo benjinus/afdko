@@ -7,8 +7,9 @@ add_executable(tx
     usage.h
 )
 
-target_include_directories(tx PRIVATE ../../shared/include ../../shared/resource ../../shared/source/tx_shared ${LIBXML2_INCLUDE_DIRS})
+target_include_directories(tx PRIVATE ../../shared/include ../../shared/resource ../../shared/source/tx_shared ${LIBXML2_INCLUDE_DIR})
 target_link_libraries(tx PUBLIC tx_shared ${LIBXML2_LIBRARY})
 
+message(STATUS "LIBXML2_INCLUDE DIRS: ${LIBXML2_INCLUDE_DIR}")
 
 install(TARGETS tx DESTINATION bin)
