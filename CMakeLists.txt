@@ -70,7 +70,7 @@ include(CTest)
 include(AddAFDKOTests)
 
 find_package(LibXml2 REQUIRED)
-include(${LIBXML2_INCLUDE_DIR})
+include_directories(${LIBXML2_INCLUDE_DIR})
 
 add_subdirectory(c/shared/source)
 add_subdirectory(c/detype1/source)
