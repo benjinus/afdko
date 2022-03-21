@@ -26,3 +26,4 @@ cov*.xml
 
 # temp output dirs created during tests
 **/temp_output
+.DS_Store
